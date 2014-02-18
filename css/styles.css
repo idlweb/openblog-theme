@@ -1,9 +1,11 @@
 /* remove to margin from body */
 body a {
   color: #cc0000;
+  text-decoration: none;
 }
 body a:hover {
   color: #660000;
+  text-decoration: underline;
 }
 body .site {
   margin-top: 0;
