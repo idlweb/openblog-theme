@@ -68,8 +68,11 @@ footer#colophon a {
   color: #fff;
 }
 footer#colophon > div {
-  width: 25%;
+  width: 33%;
   float: left;
+}
+footer#colophon aside h3.widget-title {
+  color: #fff;
 }
 footer#colophon .fa-inverse {
   color: #cc0000;

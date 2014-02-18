@@ -14,38 +14,30 @@
 
 <footer id="colophon" class="site" role="contentinfo">
     <div>
-        <h3>Openpolis</h3>
-        <ul>
-            <li><a href="http://www.openpolis.it/chi-siamo/">Chi siamo e cosa facciamo</a></li>
-            <li><a href="http://www.openpolis.it/statuto/">Statuti e bilanci</a></li>
-        </ul>
+        <?php
+        if(is_active_sidebar('footer-sidebar-1')){
+            dynamic_sidebar('footer-sidebar-1');
+        }
+        ?>
     </div>
 
     <div>
-        <h3>Sostienici</h3>
-        <ul>
-            <li><a href="http://www.openpolis.it/sostienici/">Diventa socio</a></li>
-            <li><a href="http://www.openpolis.it/sostienici/dona/">Fai una donazione</a></li>
-            <li><a href="http://www.openpolis.it/sostienici/collabora/">Collabora con noi</a></li>
-        </ul>
+        <?php
+        if(is_active_sidebar('footer-sidebar-2')){
+            dynamic_sidebar('footer-sidebar-2');
+        }
+        ?>
     </div>
 
     <div>
-        <h3>Contattaci</h3>
-        <address>
-            via degli Equi 42 - 00185 Roma <br/>
-            T. 06.83608392 <br/>
-            associazione [at] openpolis.it <br/>
-            C.I. 97532050586
-        </address>
+        <?php
+        if(is_active_sidebar('footer-sidebar-3')){
+            dynamic_sidebar('footer-sidebar-3');
+        }
+        ?>
+<!--        <h3>Seguici su</h3>-->
+        <?php //openpolis_social_links(true); ?>
     </div>
-
-    <div>
-        <h3>Seguici su</h3>
-        <?php openpolis_social_links(true); ?>
-
-    </div>
-
 
     <div id="sub-footer">
         <ul>

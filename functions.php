@@ -66,15 +66,18 @@ function openpolis_entry_tags() {
 }
 
 
-function openpolis_social_links($inverse=false) {
+function openpolis_get_social_links($inverse=false) {
     /**
-     * Prints HTML with icons to openpolis social accounts.
+     * Returns icons to openpolis social accounts.
      *
      * @since Openpolis Theme 1.0
      */
     global $openpolis_links;
+
+    $links = '';
+
     foreach ($openpolis_links as $key => $value) {
-        printf(
+        $links .= sprintf(
             '<a class="fa-stack fa-lg" href="%2$s">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-%1$s fa-stack-1x fa-inverse"></i>
@@ -83,7 +86,21 @@ function openpolis_social_links($inverse=false) {
             esc_url($value)
         );
     }
+
+    return $links;
 }
+
+function openpolis_social_links($inverse=false) {
+    /**
+     * Prints HTML with icons to openpolis social accounts.
+     *
+     * @since Openpolis Theme 1.0
+     */
+    print(openpolis_get_social_links($inverse));
+}
+
+add_shortcode( 'social_links', 'openpolis_get_social_links' );
+add_filter('widget_text', 'do_shortcode');
 
 
 function openpolis_the_post_thumbnail( $size = 'post-thumbnail', $attr = '' ) {
@@ -108,6 +125,39 @@ function openpolis_get_the_post_thumbnail( $post_id = null, $size = 'post-thumbn
     }
     return $html;
 }
+
+function openpolis_widgets_init() {
+
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 1',
+        'id' => 'footer-sidebar-1',
+        'description' => 'First column in the footer area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 2',
+        'id' => 'footer-sidebar-2',
+        'description' => 'Second column in the footer area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Footer Sidebar 3',
+        'id' => 'footer-sidebar-3',
+        'description' => 'Third  column in the footer area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+}
+
+add_action( 'widgets_init', 'openpolis_widgets_init' );
 
 //
 //// Override twentytwelve_entry_meta function in functions.php
