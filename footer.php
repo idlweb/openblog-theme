@@ -45,7 +45,21 @@
         <?php openpolis_social_links(true); ?>
 
     </div>
+
+
+    <div id="sub-footer">
+        <ul>
+            <li><a href="http://www.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openpolis.png" alt="Sito dell'associazione OpenPolis" title="Associazione Openpolis"></a></li>
+            <li><a href="http://parlamento.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openparlamento.png" alt="Open Parlamento" title="Open Parlamento"></a></li>
+            <li><a href="http://politici.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openpolitici.png" alt="Open politici" title="Open politici"></a></li>
+            <li><a href="http://voisietequi.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/voisietequi.png" alt="Voi Siete Qui" title="Voi Siete Qui"></a></li>
+            <li><a href="http://indice.openpolis.it/"><img src="http://www.openpolis.it/static/img/footers/indiceproduttivita.png" alt="L'Indice di Produttività Parlamentare" title="L'Indice di Produttività Parlamentare"></a></li>
+            <li><a href="http://www.openmunicipio.it/"><img src="http://www.openpolis.it/static/img/footers/openmunicipio.png" alt="Open municipio" title="Open municipio"></a></li>
+        </ul>
+    </div>
+
 </footer><!-- #colophon -->
+
 
 <?php wp_footer(); ?>
 </body>

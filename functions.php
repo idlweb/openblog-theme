@@ -12,6 +12,12 @@ $openpolis_links = array(
     'google-plus' => 'https://plus.google.com/+openpolis/'
 );
 
+if ( function_exists( 'add_theme_support' ) ) {
+    add_theme_support( 'post-thumbnails' );
+    set_post_thumbnail_size( 130, 130 );
+}
+//set_post_thumbnail_size( 50, 50, true );
+
 
 function _icon($name) {
     return '<i class="fa fa-' . $name . '"></i>';
@@ -78,7 +84,30 @@ function openpolis_social_links($inverse=false) {
             esc_url($value)
         );
     }
+}
 
+
+function openpolis_the_post_thumbnail( $size = 'post-thumbnail', $attr = '' ) {
+    echo openpolis_get_the_post_thumbnail( null, $size, $attr );
+}
+
+function openpolis_get_the_post_thumbnail( $post_id = null, $size = 'post-thumbnail', $attr = '' ) {
+    $post_id = ( null === $post_id ) ? get_the_ID() : $post_id;
+    $post_thumbnail_id = get_post_thumbnail_id( $post_id );
+
+    if ($post_thumbnail_id) {
+        $image = wp_get_attachment_image_src($post_thumbnail_id, $size);
+
+        if ( in_the_loop() )
+            update_post_thumbnail_cache();
+
+        $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '" class="thumb" style="background-image: url(\'' . $image[0] . '\');">&nbsp;</a>';
+
+    }
+    else {
+        $html = '';
+    }
+    return $html;
 }
 
 //
