@@ -27,7 +27,7 @@
 			<?php endif; // is_single() ?>
             <?php if ( comments_open() ) : ?>
 				<div class="comments-link">
-                    <i class="fa fa-comment-o"></i> <?php comments_popup_link( '<span class="leave-reply">' . __( 'Leave a reply', 'twentytwelve' ) . '</span>', __( '1 Reply', 'twentytwelve' ), __( '% Replies', 'twentytwelve' ) ); ?>
+                    <i class="fa fa-comment-o"></i> <?php comments_popup_link( '<span class="leave-reply">Commenta</span>', '1 Commento', '% Commenti' ); ?>
 				</div><!-- .comments-link -->
 			<?php endif; // comments_open() ?>
             <div class="entry-meta">
