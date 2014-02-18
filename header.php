@@ -54,7 +54,7 @@
                 Seguici su
                 <?php openpolis_social_links(); ?>
 			</div>
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu', 'container_id' => 'main-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 
 	</header><!-- #masthead -->

@@ -52,12 +52,13 @@ body footer#colophon {
 #site-navigation .social-accounts a {
   color: #cc0000;
 }
-#site-navigation .nav-menu {
-  text-align: left;
-}
-#site-navigation .nav-menu ul {
+#site-navigation ul {
   width: auto;
-  border: 0;
+  border: 0 !important;
+}
+#site-navigation .nav-menu,
+#site-navigation #main-menu {
+  text-align: left;
 }
 footer#colophon {
   background-color: #cc0000;
