@@ -9,15 +9,14 @@
 $openpolis_links = array(
     'twitter' => 'https://twitter.com/openpolis',
     'facebook' => 'https://www.facebook.com/openpolis',
-    'google-plus' => 'https://plus.google.com/+openpolis/'
+    'google-plus' => 'https://plus.google.com/+openpolis/',
+    'youtube' => 'http://www.youtube.com/user/RedazioneOpenpolis'
 );
 
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
     set_post_thumbnail_size( 130, 130 );
 }
-//set_post_thumbnail_size( 50, 50, true );
-
 
 function _icon($name) {
     return '<i class="fa fa-' . $name . '"></i>';
