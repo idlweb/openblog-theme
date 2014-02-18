@@ -1,0 +1,64 @@
+
+/* remove to margin from body */
+body .site { margin-top: 0; }
+body a { color: #C00; }
+body a:hover { color: #600; }
+
+/*.entry-meta-top {*/
+    /*background: url("../images/dotted-hor.png") repeat-x scroll 0 bottom transparent;*/
+    /*margin: 0 auto 20px;*/
+    /*padding: 0 0 10px;*/
+    /*width: 100%;*/
+    /*z-index: 10;*/
+/*}*/
+
+/* fix margins around the content */
+article header.entry-header {
+    margin-bottom: 12px;
+}
+article footer.entry-meta {
+    margin-top: 12px;
+}
+
+/* add dotted and padding to elements into header */
+article header.entry-header h1.entry-title, article header.entry-header div.entry-meta {
+    background: url("../images/dotted-hor.png") repeat-x scroll 0 bottom transparent;
+}
+
+article header.entry-header h1.entry-title {
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+}
+
+article header.entry-header div.entry-meta {
+    padding-bottom: 2px;
+}
+
+/* display date and categories inline */
+article header.entry-header div.entry-meta {
+    font-size: 13px;
+    line-height: 1.846153846;
+    color: #757575;
+    
+    clear: none;
+}
+article header.entry-header div.entry-meta > div {
+    display: inline-block;
+}
+article header.entry-header div.entry-meta > div:first-child {
+    margin-right: 20px;
+}
+
+/* display comments and meta in the same line */
+article header.entry-header div.comments-link {
+    float:right;
+    margin: 0;
+}
+
+/* remove margin from p */
+article .entry-content p { margin-bottom: 12px; }
+
+/* push to right the edit icon */
+article footer.entry-meta .edit-link {
+    float:right;
+}

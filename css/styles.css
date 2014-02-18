@@ -1,0 +1,157 @@
+/* remove to margin from body */
+body a {
+  color: #cc0000;
+}
+body a:hover {
+  color: #660000;
+}
+body .site {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body #page {
+  padding-bottom: 20px;
+}
+body footer#colophon {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+#masthead {
+  padding: 12px 0;
+  position: relative;
+}
+#masthead hgroup.hide {
+  display: none;
+}
+#masthead img.header-image {
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+}
+#masthead #openpolis-logo {
+  position: absolute;
+  top: 32px;
+  right: 0;
+}
+#masthead #openpolis-logo img {
+  height: 28px;
+}
+#site-navigation {
+  margin-top: 0;
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+}
+#site-navigation .social-accounts {
+  float: right;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #cc0000;
+}
+#site-navigation .social-accounts a {
+  color: #cc0000;
+}
+#site-navigation .nav-menu {
+  text-align: left;
+}
+#site-navigation .nav-menu ul {
+  width: auto;
+  border: 0;
+}
+footer#colophon {
+  background-color: #cc0000;
+  color: #fff;
+}
+footer#colophon a {
+  color: #fff;
+}
+footer#colophon > div {
+  width: 25%;
+  float: left;
+}
+footer#colophon .fa-inverse {
+  color: #cc0000;
+}
+article {
+  /* fix margins around the content */
+  /* remove margin from p */
+}
+article header.entry-header {
+  margin-bottom: 12px;
+}
+article footer.entry-meta {
+  margin-top: 12px;
+}
+article .entry-meta {
+  padding: 2px 0;
+}
+article header.entry-header {
+  /* add dotted and padding to elements into header */
+  /* display date and categories inline */
+  /* display comments and meta in the same line */
+}
+article header.entry-header h1.entry-title {
+  background: url("../images/dotted-hor.png") repeat-x scroll 0 bottom transparent;
+  padding-bottom: 10px;
+}
+article header.entry-header div.entry-meta {
+  background: url("../images/dotted-hor.png") repeat-x scroll 0 bottom transparent;
+}
+article header.entry-header div.entry-meta {
+  /* styling like footer.entry-meta */
+  font-size: 13px;
+  line-height: 1.846153846;
+  color: #757575;
+  /* override the default clear:both to allow comments to float right */
+  clear: none;
+  /* display inline date and categories */
+}
+article header.entry-header div.entry-meta > div {
+  display: inline-block;
+}
+article header.entry-header div.entry-meta > div:first-child {
+  margin-right: 20px;
+}
+article header.entry-header div.comments-link {
+  float: right;
+  margin: 0;
+}
+article .entry-content p {
+  margin-bottom: 12px;
+}
+article footer.entry-meta {
+  background: url("../images/dotted-hor.png") repeat-x scroll 0 top transparent;
+  /* push to right the edit icon */
+}
+article footer.entry-meta .edit-link {
+  float: right;
+}
+/* remove bottom border of twentytwelve */
+.site-content article {
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 36px;
+}
+/* social icons styles */
+.fa-twitter:hover {
+  color: #00a0d1 !important;
+}
+.fa-facebook:hover {
+  color: #3b5998 !important;
+}
+footer .fa-google-plus:hover {
+  color: #c4302b !important;
+}
+#secondary .widget {
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  background: url("../images/dotted-hor.png") repeat-x scroll 0 bottom transparent;
+}
+#secondary .widget .widget-title {
+  margin-bottom: 12px;
+  color: #cc0000;
+}
+.comments-link a:hover,
+.entry-meta a:hover,
+.widget-area .widget a:hover {
+  color: #660000;
+}

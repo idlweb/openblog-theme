@@ -1,0 +1,142 @@
+@red: #C00;
+@dark-red: #600;
+
+
+/* remove to margin from body */
+body {
+  a { color: @red; }
+  a:hover { color: @dark-red; }
+  .site { margin-top: 0; margin-bottom: 0; }
+
+  #page { padding-bottom: 20px;}
+  footer#colophon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+#masthead {
+  padding: 12px 0;
+  position: relative;
+  hgroup.hide { display: none; }
+  img.header-image {
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  #openpolis-logo {
+    position: absolute;
+    top: 32px;
+    right: 0;
+    img { height: 28px; }
+  }
+}
+#site-navigation {
+  margin-top: 0;
+
+  border-bottom: 1px solid #ededed;
+  border-top: 1px solid #ededed;
+
+  .social-accounts {
+    float:right;
+    font-size: 12px;
+    margin-top: 5px;
+    color: @red;
+    a { color: @red; }
+  }
+  .nav-menu {
+    text-align: left;
+    ul {
+      width: auto;
+      border: 0;
+    }
+  }
+
+}
+
+footer#colophon {
+  background-color: @red;
+  color: #fff;
+  a { color: #fff; }
+  &> div { width: 25%; float:left; }
+  .fa-inverse { color: @red; }
+}
+
+.dotted-background(@value) when (default()) {
+  background: url("../images/dotted-hor.png") repeat-x scroll 0 @value transparent;
+}
+
+article {
+  /* fix margins around the content */
+  header.entry-header { margin-bottom: 12px; }
+  footer.entry-meta { margin-top: 12px; }
+
+  .entry-meta { padding: 2px 0; }
+
+  header.entry-header {
+    /* add dotted and padding to elements into header */
+    h1.entry-title { .dotted-background(bottom); padding-bottom: 10px; }
+    div.entry-meta { .dotted-background(bottom); }
+
+    /* display date and categories inline */
+    div.entry-meta {
+      /* styling like footer.entry-meta */
+      font-size: 13px;
+      line-height: 1.846153846;
+      color: #757575;
+
+      /* override the default clear:both to allow comments to float right */
+      clear: none;
+
+      /* display inline date and categories */
+      &> div { display: inline-block; }
+      &> div:first-child { margin-right: 20px; }
+    }
+
+    /* display comments and meta in the same line */
+    div.comments-link {
+      float:right;
+      margin: 0;
+    }
+  }
+
+  /* remove margin from p */
+  .entry-content p { margin-bottom: 12px; }
+
+
+  footer.entry-meta {
+
+    .dotted-background(top);
+
+    /* push to right the edit icon */
+    .edit-link {
+      float:right;
+    }
+  }
+}
+
+/* remove bottom border of twentytwelve */
+.site-content article {
+  border: 0;
+  padding-bottom: 0;
+  margin-bottom: 36px;
+}
+
+
+/* social icons styles */
+.fa-twitter:hover { color: #00a0d1 !important; }
+.fa-facebook:hover { color: #3b5998 !important; }
+footer { .fa-google-plus:hover { color: #c4302b !important; } }
+
+#secondary {
+  .widget {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    .dotted-background(bottom);
+
+    .widget-title { margin-bottom: 12px; color: @red; }
+  }
+}
+
+.comments-link a:hover, .entry-meta a:hover, .widget-area .widget a:hover { color: @dark-red; }

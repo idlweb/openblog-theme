@@ -1,0 +1,19 @@
+/*
+ Theme Name:   Openpolis Theme
+ Theme URI:    http://www.openpolis.it/
+ Description:  Theme for openpolis blog
+ Author:       joke2k
+ Author URI:   http://www.joke2k.net
+ Template:     twentytwelve
+ Version:      1.0.0
+ Tags:         light, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  op
+*/
+
+@import url("../twentytwelve/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url("css/styles.css");
