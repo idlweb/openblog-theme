@@ -78,7 +78,7 @@ function openpolis_get_social_links($inverse=false) {
 
     foreach ($openpolis_links as $key => $value) {
         $links .= sprintf(
-            '<a class="fa-stack fa-lg" href="%2$s">
+            '<a class="fa-stack fa-lg" href="%2$s" target="_blank">
                 <i class="fa fa-circle fa-stack-2x"></i>
                 <i class="fa fa-%1$s fa-stack-1x fa-inverse"></i>
             </a>',
