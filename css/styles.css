@@ -167,6 +167,13 @@ footer .fa-google-plus:hover {
 #secondary .widget .widget-title {
   margin-bottom: 12px;
   color: #cc0000;
+  /* hide icon */
+}
+#secondary .widget .widget-title a {
+  color: #cc0000;
+}
+#secondary .widget .widget-title .rsswidget:first-child {
+  display: none;
 }
 .thumb {
   display: inline-block;

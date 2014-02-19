@@ -151,7 +151,11 @@ footer { .fa-google-plus:hover { color: #c4302b !important; } }
     margin-bottom: 24px;
     .dotted-background(bottom);
 
-    .widget-title { margin-bottom: 12px; color: @red; }
+    .widget-title {
+      margin-bottom: 12px; color: @red;
+      a { color: @red; }
+      .rsswidget:first-child { display: none; } /* hide icon */
+    }
   }
 }
 
