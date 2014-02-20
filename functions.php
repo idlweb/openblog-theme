@@ -117,7 +117,7 @@ function openpolis_get_the_post_thumbnail( $post_id = null, $size = 'post-thumbn
         if ( in_the_loop() )
             update_post_thumbnail_cache();
 
-        $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '" class="thumb" style="background-image: url(\'' . $image[0] . '\');">&nbsp;</a>';
+        $html = '<a href="' . get_permalink( $post_id ) . '" title="' . esc_attr( get_the_title( $post_id ) ) . '" class="thumb" style="background-image: url(\'' . $image[0] . '\');"></a>';
 
     }
     else {
