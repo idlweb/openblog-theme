@@ -34,9 +34,7 @@ body footer#colophon {
   position: absolute;
   top: 32px;
   right: 0;
-}
-#masthead #openpolis-logo img {
-  height: 28px;
+  /*img { height: 28px; }*/
 }
 #site-navigation {
   margin-top: 0;
