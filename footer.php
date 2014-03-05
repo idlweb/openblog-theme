@@ -40,13 +40,13 @@
     </div>
 
     <div id="sub-footer">
-        <ul>
-            <li><a href="http://www.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openpolis.png" alt="Sito dell'associazione OpenPolis" title="Associazione Openpolis"></a></li>
-            <li><a href="http://parlamento.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openparlamento.png" alt="Open Parlamento" title="Open Parlamento"></a></li>
-            <li><a href="http://politici.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/openpolitici.png" alt="Open politici" title="Open politici"></a></li>
-            <li><a href="http://voisietequi.openpolis.it"><img src="http://www.openpolis.it/static/img/footers/voisietequi.png" alt="Voi Siete Qui" title="Voi Siete Qui"></a></li>
-            <li><a href="http://indice.openpolis.it/"><img src="http://www.openpolis.it/static/img/footers/indiceproduttivita.png" alt="L'Indice di Produttività Parlamentare" title="L'Indice di Produttività Parlamentare"></a></li>
-            <li><a href="http://www.openmunicipio.it/"><img src="http://www.openpolis.it/static/img/footers/openmunicipio.png" alt="Open municipio" title="Open municipio"></a></li>
+        <ul id="op-services">
+            <li><a href="http://www.openpolis.it" target="_parent" title="Associazione Openpolis"><img src="<?= get_bloginfo('stylesheet_directory') ?>/images/logo-footer.png" alt="Sito dell'associazione OpenPolis"></a></li>
+            <li><a href="http://parlamento.openpolis.it" target="_parent" title="OpenParlamento">Open<b>Parlamento</b></a></li>
+            <li><a href="http://politici.openpolis.it" target="_parent" title="OpenPolitici">Open<b>Politici</b></a></li>
+            <li><a href="http://voisietequi.openpolis.it" target="_parent" title="VoiSieteQui"><b>Voi</b>Siete<b>Qui</b></a></li>
+            <li><a href="http://indice.openpolis.it/" target="_parent" title="Indice di Produttività Parlamentare"><b>Indice</b> di <b> Produttività Parlamentare</b></a></li>
+            <li><a href="http://www.openmunicipio.it/" target="_parent" title="OpenMunicipio">Open<b>Municipio</b></a></li>
         </ul>
     </div>
 

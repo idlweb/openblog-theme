@@ -52,6 +52,12 @@ body footer#colophon {
 #site-navigation .social-accounts a {
   color: #cc0000;
 }
+#site-navigation .social-accounts a:hover .fa-inverse {
+  color: #cc0000;
+}
+#site-navigation .social-accounts a:hover .fa-circle {
+  display: none;
+}
 #site-navigation ul {
   width: auto;
   border: 0 !important;
@@ -74,20 +80,19 @@ footer#colophon > div {
 footer#colophon aside h3.widget-title {
   color: #fff;
 }
-footer#colophon .fa-inverse {
+footer#colophon a.fa-stack i.fa-inverse {
   color: #cc0000;
+}
+footer#colophon a.fa-stack:hover .fa-inverse {
+  color: white;
+}
+footer#colophon a.fa-stack:hover .fa-circle {
+  display: none;
 }
 footer#colophon #sub-footer {
   clear: both;
   width: 100%;
   margin-top: 40px;
-}
-footer#colophon #sub-footer ul {
-  text-align: center;
-}
-footer#colophon #sub-footer ul li {
-  display: inline-block;
-  border-left: 0;
 }
 article {
   /* fix margins around the content */
@@ -150,15 +155,6 @@ article footer.entry-meta .edit-link {
   margin-bottom: 36px;
 }
 /* social icons styles */
-.fa-twitter:hover {
-  color: #00a0d1 !important;
-}
-.fa-facebook:hover {
-  color: #3b5998 !important;
-}
-footer .fa-google-plus:hover {
-  color: #c4302b !important;
-}
 #secondary .widget {
   padding-bottom: 24px;
   margin-bottom: 24px;
@@ -189,4 +185,34 @@ footer .fa-google-plus:hover {
 .entry-meta a:hover,
 .widget-area .widget a:hover {
   color: #660000;
+}
+/* openpolis footer */
+ul#op-services {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 0;
+  list-style: none outside none;
+  text-align: center;
+  line-height: 20px;
+  text-transform: lowercase;
+  /*word-spacing: -0.26em;*/
+}
+ul#op-services > li {
+  display: inline-block;
+  padding: 0 10px;
+  border-left: 1px solid #d6d8d9;
+}
+ul#op-services > li:first-child {
+  border-left: 0;
+}
+ul#op-services > li > a {
+  color: #d6d8d9;
+  text-decoration: none;
+}
+ul#op-services > li > a:hover {
+  color: #ededed;
+  text-shadow: 0px 2px 3px #555;
+}
+ul#op-services > li > a > img {
+  vertical-align: middle;
 }

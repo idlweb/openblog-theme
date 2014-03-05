@@ -44,6 +44,11 @@ body {
     margin-top: 5px;
     color: @red;
     a { color: @red; }
+
+    a:hover {
+      .fa-inverse {color: @red;}
+      .fa-circle {display: none;}
+    }
   }
 
   ul {
@@ -63,19 +68,21 @@ footer#colophon {
   a { color: #fff; }
   &> div { width: 33%; float:left; }
   aside h3.widget-title { color: #fff; }
-  .fa-inverse { color: @red; }
+
+  a.fa-stack {
+    i.fa-inverse { color: @red; }
+
+    &:hover {
+      .fa-inverse {color: white;}
+      .fa-circle {display: none;}
+    }
+  }
 
   #sub-footer {
     clear: both;
     width: 100%;
     margin-top: 40px;
-    ul {
-      text-align: center;
-      li {
-        display: inline-block;
-        border-left: 0;
-      }
-    }
+
   }
 }
 
@@ -141,9 +148,9 @@ article {
 
 
 /* social icons styles */
-.fa-twitter:hover { color: #00a0d1 !important; }
-.fa-facebook:hover { color: #3b5998 !important; }
-footer { .fa-google-plus:hover { color: #c4302b !important; } }
+//.fa-twitter:hover { color: #00a0d1 !important; }
+//.fa-facebook:hover { color: #3b5998 !important; }
+//footer { .fa-google-plus:hover { color: #c4302b !important; } }
 
 #secondary {
   .widget {
@@ -171,3 +178,38 @@ footer { .fa-google-plus:hover { color: #c4302b !important; } }
 }
 
 .comments-link a:hover, .entry-meta a:hover, .widget-area .widget a:hover { color: @dark-red; }
+
+
+/* openpolis footer */
+ul#op-services {
+
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+
+  padding: 10px 0;
+  list-style: none outside none;
+  text-align: center;
+  line-height: 20px;
+  text-transform: lowercase;
+  /*word-spacing: -0.26em;*/
+
+  &>li {
+    display: inline-block;
+    padding: 0 10px;
+    border-left: 1px solid #d6d8d9;
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &>a {
+      color: #d6d8d9;
+      text-decoration: none;
+
+      &:hover { color: #ededed; text-shadow: 0px 2px 3px #555; }
+      &>img {
+        vertical-align: middle;
+      }
+    }
+  }
+}
