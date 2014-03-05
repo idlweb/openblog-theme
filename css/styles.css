@@ -37,7 +37,7 @@ body footer#colophon {
   /*img { height: 28px; }*/
 }
 #site-navigation {
-  margin-top: 0;
+  margin-top: 10px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
 }
