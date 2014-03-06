@@ -10,7 +10,8 @@ $openpolis_links = array(
     'twitter' => 'https://twitter.com/openpolis',
     'facebook' => 'https://www.facebook.com/openpolis',
     'google-plus' => 'https://plus.google.com/+openpolis/',
-    'youtube' => 'http://www.youtube.com/channel/UCVoiHyBePeQb8PcD9h5e1Ow'
+    'youtube' => 'http://www.youtube.com/channel/UCVoiHyBePeQb8PcD9h5e1Ow',
+    'linkedin' => 'http://www.linkedin.com/company/openpolis/'
 );
 
 if ( function_exists( 'add_theme_support' ) ) {
