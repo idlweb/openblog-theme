@@ -16,7 +16,7 @@ $openpolis_links = array(
 
 if ( function_exists( 'add_theme_support' ) ) {
     add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 100, 100 );
+    set_post_thumbnail_size( 75, 75 );
 }
 
 function _icon($name) {
