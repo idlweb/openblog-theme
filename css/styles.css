@@ -254,16 +254,16 @@ select.selectnav {
   .js .selectnav {
     display: block;
   }
-  footer#colophon {
+  body footer#colophon {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 50px;
   }
-  footer#colophon > div {
+  body footer#colophon > div {
     width: auto;
     float: none;
   }
-  footer#colophon ul#op-services > li {
+  body footer#colophon ul#op-services > li {
     border: 0 !important;
     display: block;
   }
