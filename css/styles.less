@@ -215,6 +215,20 @@ ul#op-services {
 }
 
 @media screen and (max-width: 580px) {
+
+}
+
+/* hide the default responsive menu and menu button */
+h3.menu-toggle {display: none}
+.main-navigation ul.nav-menu, .main-navigation div.nav-menu > ul {display: none;}
+
+/* new responsive selectnav css */
+.selectnav { display: none; }
+select.selectnav {margin:0 auto;} /* centers select */
+
+/* small screen */
+@media screen
+and (max-width : 580px)  {
   #masthead {
     #openpolis-logo {
       position: static;
@@ -226,7 +240,22 @@ ul#op-services {
       text-align: center;
     }
     #site-navigation {
-
+      .selectnav {margin-top: 5px; margin-bottom: 5px;}
     }
+    .social-accounts {
+      float: none;
+    }
+  }
+  .js #menu-principale { display: none!important; }
+  .js .selectnav { display: block; }
+
+  footer#colophon {
+    padding-left: 20px; padding-right: 20px;
+    &> div { width: auto; float: none; }
+    ul#op-services > li {
+      border: 0 !important;
+      display: block;
+    }
+//    ul#op-services > li:first-child { display: block;}
   }
 }

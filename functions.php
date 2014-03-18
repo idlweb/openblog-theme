@@ -166,6 +166,8 @@ function deregister_navscript() {
     wp_deregister_script( 'twentytwelve-navigation' );
 }
 
+wp_enqueue_script( 'twentytwelve-mobile-navigation', get_stylesheet_directory_uri() . '/js/selectnav.min.js', array(), '1.0', true );
+
 //
 //// Override twentytwelve_entry_meta function in functions.php
 //if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :
