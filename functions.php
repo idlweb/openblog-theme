@@ -160,7 +160,7 @@ function openpolis_widgets_init() {
 
 add_action( 'widgets_init', 'openpolis_widgets_init' );
 
-
+// http://writenowdesign.com/blog/wordpress/wordpress-how-to/how-to-add-a-responsive-menu-to-wordpress-twenty-twelve-template/2/
 add_action( 'wp_print_scripts', 'deregister_navscript', 100 );
 function deregister_navscript() {
     wp_deregister_script( 'twentytwelve-navigation' );
