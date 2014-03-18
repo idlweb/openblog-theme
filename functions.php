@@ -160,6 +160,12 @@ function openpolis_widgets_init() {
 
 add_action( 'widgets_init', 'openpolis_widgets_init' );
 
+
+add_action( 'wp_print_scripts', 'deregister_navscript', 100 );
+function deregister_navscript() {
+    wp_deregister_script( 'twentytwelve-navigation' );
+}
+
 //
 //// Override twentytwelve_entry_meta function in functions.php
 //if ( ! function_exists( 'twentytwelve_entry_meta' ) ) :

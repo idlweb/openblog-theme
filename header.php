@@ -45,7 +45,7 @@
         </hgroup>
 
         <?php if ( $image ) : ?>
-        <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php header_image(); ?>" class="header-image" /></a>
+        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="openblog-logo"><img src="<?php header_image(); ?>" class="header-image" /></a>
         <?php endif; ?>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
