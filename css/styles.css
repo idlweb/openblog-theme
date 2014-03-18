@@ -215,12 +215,12 @@ ul#op-services > li > a > img {
   vertical-align: middle;
 }
 @media screen and (max-width: 580px) {
-  #openpolis-logo {
+  #masthead #openpolis-logo {
     position: static;
     text-align: center;
     display: block;
   }
-  #openblog-logo {
+  #masthead #openblog-logo {
     display: block;
     text-align: center;
   }
