@@ -225,7 +225,9 @@ h3.menu-toggle {
 /* reduce margin and remove uppercasing */
 #site-navigation li {
   margin: 0 30px 0 0;
-  text-transform: none;
+}
+#site-navigation li a {
+  tex-transform: none;
 }
 /* new responsive selectnav css */
 .selectnav {
