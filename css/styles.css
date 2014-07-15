@@ -222,13 +222,6 @@ h3.menu-toggle {
 .main-navigation div.nav-menu > ul {
   display: none;
 }
-/* reduce margin and remove uppercasing */
-#site-navigation li {
-  margin: 0 30px 0 0;
-}
-#site-navigation li a {
-  text-transform: none;
-}
 /* new responsive selectnav css */
 .selectnav {
   display: none;
@@ -274,4 +267,7 @@ select.selectnav {
     border: 0 !important;
     display: block;
   }
+}
+#subscribeForm .muSubmit input[type=submit] {
+  color: #555;
 }
