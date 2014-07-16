@@ -277,3 +277,6 @@ select.selectnav {
 #subscribeForm .muSubmit input[type=submit] {
   color: #555;
 }
+#subscribeForm .muSubmit input[type=submit]:hover {
+  color: #989898;
+}
