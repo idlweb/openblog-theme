@@ -60,6 +60,12 @@ body footer#colophon {
   width: auto;
   border: 0 !important;
 }
+#site-navigation ul li {
+  margin: 0 30px 0 0;
+}
+#site-navigation ul li a {
+  text-transform: none;
+}
 #site-navigation .nav-menu,
 #site-navigation #main-menu {
   text-align: left;
